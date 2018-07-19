@@ -23,8 +23,7 @@ import com.jason.boot.utils.StringUtil;
 @RequestMapping("users")
 @Transactional
 public class UserSenController {
-	@Autowired
-	UserSenService service;
+	
 	@CheckNull	//此处添加非空校验注解，aop会拦截该方法进行参数校验
 	@RequestMapping(value="test",method=RequestMethod.POST)
 	public Result<Object> test(String name,String age){
