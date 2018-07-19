@@ -6,7 +6,7 @@ import java.lang.annotation.Target;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.ElementType;
 /**
- * 作用于controller方法上，校验入参是否有空值的注解
+ * 非空校验注解，作用于controller方法上，校验入参是否有空值的注解
  * @author jason
  *
  */
