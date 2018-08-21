@@ -7,3 +7,5 @@
 解决思路：aop切面拦截controller入参，注解标注哪些字段要校验，哪些字段不用校验，在切面方法中，通过反射机制进行自定义校验。
 
 具体运用：被@CheckNull注解标注的方法，则要进行参数的统一非空校验；@CheckNullIgnore("age")注解的值则是要在该方法的参数列表忽略非空校验的字段；CheckAop.java则是拦截被@CheckNull注解的controller方法的切面，在里面自定义校验逻辑。
+
+（hibernate validation参数校验框架适用于有实体类接收参数）
